@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { NewForm } from './NewForm'
 import { TodoList } from './TodoList'
+import './App.css'
 
 function App() {
 
