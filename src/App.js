@@ -16,7 +16,8 @@ function App() {
     useEffect(() => {
         localStorage.setItem("ITEMS", JSON.stringify(todos))
     }, [todos])
-
+    
+    {/* Add new tasks to todo list*/}
     function addTodo(title) {
         setTodos(currentTodos => {
             return [
@@ -27,7 +28,7 @@ function App() {
         })
     }
 
-    
+    {/* Create functionality for delete button */}
     function deleteTodo(id) {
         setTodos(currentTodos => {
             return currentTodos.filter(todo => todo.id !== id)

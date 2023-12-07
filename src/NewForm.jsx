@@ -4,6 +4,7 @@ export function NewForm({ onSubmit }) {
 
     const [newItem, setNewItem] = useState("")
 
+    {/* Create Submit Functionality */}
     function handleSubmit(e) {
         e.preventDefault()
         if (newItem === "") return
